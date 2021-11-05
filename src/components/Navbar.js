@@ -18,14 +18,20 @@ export default function Navbar(props) {
                             <a className="nav-link" href="/">{props.about}</a>
                         </li>
                     </ul>
-                    {/* <form className="d-flex">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-primary" type="submit">Search</button>
-                    </form> */}
-                    <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
+                    <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
                         <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
+                        <label className="form-check-label" htmlhtmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
                     </div>
+                    {/* <div className="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" className="btn-check" name="btnradio" id="btnradio1" autocomplete="off"/>
+                        <label className="btn btn-outline-primary" htmlFor="btnradio1">Light</label>
+
+                        <input type="radio" className="btn-check" name="btnradio" id="btnradio2" autocomplete="off"/>
+                        <label className="btn btn-outline-primary" htmlFor="btnradio2">Dark</label>
+
+                        <input type="radio" className="btn-check" name="btnradio" id="btnradio3" autocomplete="off"/>
+                        <label className="btn btn-outline-primary" htmlFor="btnradio3">Green</label>
+                    </div> */}
                 </div>
             </div>
         </nav>
